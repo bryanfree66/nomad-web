@@ -2,7 +2,7 @@
   "name": "nomad_web",
   "version": "0.0.0",
   "description": "A simple real estate mapping app",
-  "main": "src/index.js",
+  "main": "app/scripts/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -8,7 +8,7 @@ module.exports = function(grunt) {   
         },
 		'dist': {
 			'files': {                
-				'dist/index.min.js': ['dist/index.js']            
+				'dist/app.min.js': ['dist/app.js']            
 			} 
 		}  
 	});
