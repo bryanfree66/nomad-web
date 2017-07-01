@@ -1,0 +1,21 @@
+{
+  "name": "nomad_web",
+  "description": "A simple real estate mapping app",
+  "main": "src/index.js",
+  "authors": [
+    "Bryan Freeman"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bryanfree66/nomad-web",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1"
+  }
+}
