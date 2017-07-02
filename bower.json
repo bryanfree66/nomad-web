@@ -16,6 +16,8 @@
     "tests"
   ],
   "devDependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "requirejs": "^2.3.3",
+    "angular": "^1.6.4"
   }
 }
