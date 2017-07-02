@@ -10,7 +10,7 @@ module.exports = function(grunt) {   
 			},
 			dist: {
 				files: {
-					'dist/app.js': 'app/scripts/app.js'
+					'dist/source/app.js': 'app/scripts/app.js'
 				}
 			}
 		}
