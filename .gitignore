@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/bower,grunt,visualstudiocode
 
 dist
+src/app.js
+src/app.js.map
 
 ### Node modules ###
 node_modules
