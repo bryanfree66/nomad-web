@@ -4,12 +4,12 @@ module.exports = function(grunt) {   
 	   
 	grunt.config('typescript', {
         'base': {
-            'src': 'typescript/**/*.ts',
-            'dest': '.',
+            'src': 'src/typescript/**/*.ts',
+            'dest': 'arc/scripts/',
             'options':{
                 'module': 'amd',
                 'target': 'es5',
-                'basepath': 'typescript',
+                'basepath': 'src/typescript',
                 'sourceMap': true,
                 'declaration': true
             }

@@ -1,11 +1,13 @@
 
 # Created by https://www.gitignore.io/api/bower,grunt,visualstudiocode
 
+dist
+
 ### Node modules ###
 node_modules
 
 ### Bower ###
-app/scripts/public/components
+src/lib/public
 .bower-cache
 .bower-registry
 .bower-tmp
