@@ -11,7 +11,7 @@ module.exports = function(grunt) {   
             'jquery': true
         },
         'all': [
-            'app/scripts/*.js'
+            'src/scripts/*.js'
         ]
     });
 };

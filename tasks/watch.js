@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.config('watch', {
         'js': {
             'files': [
-                'src/**/*'
+                'src/**/*.js'
             ],
             'tasks': ['jshint'],
             'options': {
