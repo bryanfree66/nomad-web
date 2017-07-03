@@ -1,19 +1,43 @@
-<!DOCTYPE html>
+<!DOCTYPE  html> 
+<head> 
+  <title>Nomad Wb/title> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,  
+                                        initial-scale=1"> 
 
-<head>
-  <meta charset="utf-8">
-  <title>Nomad Web</title>
-  <link rel="stylesheet" href="styles/app.css">
-</head>
-<body>
-  
-  <div ng-view></div>
-    
-  <div>Nomad Web</div>
+  <script src="node_modules/core-js/client/shim.js"></script> 
+  <script src="node_modules/zone.js/dist/zone.js"></script> 
+  <script src="node_modules/systemjs/dist/system.src.js"></script> 
 
-  <script src="lib/public/angular/angular.js"></script>
-  <script src="lib/public/jquery/dist/jquery.js"></script>
-  <script src="scripts/app.js"></script>>
-</body>
-</html>
+  <script> 
+    System.config({ 
+      paths: { 
+        'ng:': 'node_modules/@angular/' 
+      }, 
+      map: { 
+        '@angular/core': 'ng:core/bundles/core.umd.js', 
+        '@angular/common': 'ng:common/bundles/common.umd.js', 
+        '@angular/compiler': 'ng:compiler/bundles/compiler.umd.js', 
+        '@angular/platform-browser': 'ng:platform- browser/bundles/platform-browser.umd.js', 
+        '@angular/platform-browser-dynamic': 'ng:platform-browser- cdw2dynamic/bundles/platform-browser-dynamic.umd.js', 
+        'rxjs': 'node_modules/rxjs' 
+      }, 
+      packages: { 
+        src: { 
+          main: 'app', 
+          defaultExtension: 'js' 
+        }, 
+        rxjs: { defaultExtension: 'js' } 
+      } 
+    }); 
+
+    System.import('src').catch(function (err) { 
+      console.error(err); 
+    }); 
+  </script> 
+</head> 
+<body> 
+  <nomad-web-app>Loading...</nomad-web-app> 
+</body> 
+</html> 
  
