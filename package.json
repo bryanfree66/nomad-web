@@ -3,29 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "prestart": "npm run build",
-    "start": "concurrently \"tsc -w\"  \"lite-server\"",
+    "start": "http-server",
     "build": "tsc"
   },
   "license": "ISC",
-  "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.1.0",
-    "systemjs": "0.20.14",
-    "typescript": "^2.3.4",
-    "zone.js": "^0.8.4"
-  },
-  "devDependencies": {
-    "@types/node": "^8.0.7",
-    "concurrently": "^3.4.0",
-    "core-js": "^2.4.1",
-    "grunt": "^1.0.0",
-    "grunt-contrib-uglify": "^3.0.1",
-    "grunt-tslint": "^5.0.1",
-    "lite-server": "^2.3.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

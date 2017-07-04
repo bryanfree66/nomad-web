@@ -3,17 +3,24 @@ import {BrowserModule} from "@angular/platform-browser";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 
 @Component({
-    selector: "nomad-web-app",
-    template: "<h1>Nomad Web</h1>",
+    selector: 'welcome-component',
+    template: '<H1>Welcome to {{title}}</H1>'
 })
-class NomadWebAppComponent {}
 
-// tslint:disable-next-line:max-classes-per-file
+class WelcomeComponent {
+    title: string;
+
+    constructor() {
+        this.title = 'Nomad Web';
+    }
+}
+
 @NgModule({
-    bootstrap: [NomadWebAppComponent],
-    declarations: [NomadWebAppComponent],
     imports: [BrowserModule],
+    declarations: [WelcomeComponent],
+    bootstrap: [WelcomeComponent],
 })
-class NomadWebAppModule {}
 
-platformBrowserDynamic().bootstrapModule(NomadWebAppModule);
+export class AppModule {}
+
+platformBrowserDynamic().bootstrapModule(AppModule);
