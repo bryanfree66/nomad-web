@@ -16,10 +16,11 @@ var NomadWebAppComponent = (function () {
 }());
 NomadWebAppComponent = __decorate([
     core_1.Component({
-        selector: 'nomad-web-app',
-        template: '<h1>Nomad Web</h1>'
+        selector: "nomad-web-app",
+        template: "<h1>Nomad Web</h1>",
     })
 ], NomadWebAppComponent);
+// tslint:disable-next-line:max-classes-per-file
 var NomadWebAppModule = (function () {
     function NomadWebAppModule() {
     }
@@ -27,9 +28,9 @@ var NomadWebAppModule = (function () {
 }());
 NomadWebAppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        bootstrap: [NomadWebAppComponent],
         declarations: [NomadWebAppComponent],
-        bootstrap: [NomadWebAppComponent]
+        imports: [platform_browser_1.BrowserModule],
     })
 ], NomadWebAppModule);
 platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(NomadWebAppModule);

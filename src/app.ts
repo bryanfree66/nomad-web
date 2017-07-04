@@ -1,20 +1,19 @@
-import {NgModule, Component} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {Component, NgModule} from "@angular/core";
+import {BrowserModule} from "@angular/platform-browser";
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 
 @Component({
-    selector: 'nomad-web-app',
-    template: '<h1>Nomad Web</h1>'
+    selector: "nomad-web-app",
+    template: "<h1>Nomad Web</h1>",
 })
 class NomadWebAppComponent {}
 
+// tslint:disable-next-line:max-classes-per-file
 @NgModule({
-    imports: [BrowserModule],
+    bootstrap: [NomadWebAppComponent],
     declarations: [NomadWebAppComponent],
-    bootstrap: [NomadWebAppComponent]
+    imports: [BrowserModule],
 })
 class NomadWebAppModule {}
 
 platformBrowserDynamic().bootstrapModule(NomadWebAppModule);
-
-
