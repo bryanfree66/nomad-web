@@ -1,14 +1,10 @@
 {
-  "name": "nomad_run",
+  "name": "nomad_web",
   "version": "0.0.0",
   "scripts": {
-    "prestart": "npm run build",
-    "start": "live-server",
-    "build": "tsc"
+    "start": "live-server"
   },
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@angular/common": "^2.0.0",
     "@angular/compiler": "^2.0.0",
     "@angular/core": "^2.0.0",
@@ -17,6 +13,12 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
     "systemjs": "^0.19.37",
+    "zone.js": "0.6.21",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
     "typescript": "^2.0.0"
   }
 }
