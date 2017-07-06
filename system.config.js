@@ -7,8 +7,9 @@
           module: "commonjs"
         },
       map: {      
-        '@angular': 'node_modules/@angular',
-        'rxjs'    : 'node_modules/rxjs'    },
+        '@angular'                              : 'node_modules/@angular',
+        'rxjs'                                  : 'node_modules/rxjs'    
+        },
         paths: {
             'node_modules/@angular/*': 'node_modules/@angular/*/bundles'
         },
@@ -16,12 +17,23 @@
             '@angular/*': {'format': 'cjs'}
         },
         packages: {
-            'app'                              :   {main: 'main', defaultExtension:  'ts'},
-            'rxjs'                             :   {main: 'Rx'},
-            '@angular/core'                    :   {main: 'core.umd.min.js'},
-            '@angular/common'                  :   {main: 'common.umd.min.js'},
-            '@angular/compiler'                :   {main: 'compiler.umd.min.js'},
-            '@angular/platform-browser'        :   {main: 'platform-browser.umd.min.js'},
-            '@angular/platform-browser-dynamic':   {main: 'platform-browser-dynamic.umd.min.js'}
+            'app'                                   :   {main: 'main', defaultExtension:  'ts'},
+            
+            '@angular/core'                         :   {main: 'core.umd.min.js'},
+            '@angular/common'                       :   {main: 'common.umd.min.js'},
+            '@angular/compiler'                     :   {main: 'compiler.umd.min.js'},
+            '@angular/platform-browser'             :   {main: 'platform-browser.umd.min.js'},
+            '@angular/platform-browser-dynamic'     :   {main: 'platform-browser-dynamic.umd.min.js'},
+            '@angular/http'                         :   {main: 'http.umd.min.js'},
+            '@angular/forms'                        :   {main: 'forms.umd.min.js'},
+
+            '@angular/animations'                   :   {main: 'animations.umd.min.js'},
+            '@angular/animations/browser'           :   {main: 'animations-browser.umd.min.js'},
+            '@angular/platform-browser/animations'  :   {main: 'platform-browser-animations.umd.min.js'},
+
+            '@angular/material'                     :   {main: 'material.umd.min.js'},
+            
+            'rxjs'                                  :   {main: 'Rx'},
+            
         }
     });
