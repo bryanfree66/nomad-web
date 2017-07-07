@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'welcome',
-    templateUrl: './app/components/application/welcome.html'
+    selector: 'nomad-application',
+    templateUrl: './app/components/application/application.html'
 })
 export class AppComponent {}

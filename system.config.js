@@ -26,6 +26,7 @@
             '@angular/platform-browser-dynamic'     :   {main: 'platform-browser-dynamic.umd.min.js'},
             '@angular/http'                         :   {main: 'http.umd.min.js'},
             '@angular/forms'                        :   {main: 'forms.umd.min.js'},
+            '@angular/router'                        :   {main: 'router.umd.min.js'},
 
             '@angular/animations'                   :   {main: 'animations.umd.min.js'},
             '@angular/animations/browser'           :   {main: 'animations-browser.umd.min.js'},
