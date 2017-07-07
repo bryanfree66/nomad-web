@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'nomad-application',
+    selector: 'nomad-header',
     templateUrl: './app/components/header/header.html',
 
 })
