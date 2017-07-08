@@ -1,3 +1,8 @@
+html, body { 
+  height: 100%;
+  width: 100%;
+  margin: 0; 
+}
 
 .mat-menu-item {
     color: #FFFFFF;
@@ -9,6 +14,15 @@
 }
 .logo-image{
   padding-top: 2em;
+  padding-bottom: 2em;
   display: block;
   margin: auto;
+  width: 30%;
+  height: 10%;
+}
+.app_container{
+  height: 90%;
+  width: 95%;
+  min-height: 500px;
+  min-width: 350px;
 }
