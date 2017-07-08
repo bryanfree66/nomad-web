@@ -10,8 +10,8 @@ export class AppComponent {
 
     constructor(){
         // 75% screen height
-        this.innerHeight = (window.screen.height * .75) + "px";
-        this.innerWidth = (window.screen.width * .986) + "px";
+        this.innerHeight = (window.innerHeight * .75) + "px";
+        this.innerWidth = (window.innerWidth * .986) + "px";
     }
 
     getHeight(){
