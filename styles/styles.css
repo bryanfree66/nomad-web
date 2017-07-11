@@ -1,7 +1,7 @@
 html, body { 
-  height: 100%;
-  width: 100%;
-  margin: 0; 
+  height: 99%;
+  width: 99%;
+  margin: .5; 
 }
 
 .mat-menu-item {
@@ -18,11 +18,8 @@ html, body {
   display: block;
   margin: auto;
   width: 30%;
-  height: 10%;
 }
 .app_container{
   height: 90%;
   width: 95%;
-  min-height: 500px;
-  min-width: 350px;
 }
